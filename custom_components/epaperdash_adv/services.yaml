@@ -1,0 +1,23 @@
+refresh:
+  name: Refresh screenshot
+  description: Immediately re-captures the configured dashboard view instead of waiting for the next scheduled refresh.
+  fields:
+    entry_id:
+      name: Config entry
+      description: The EpaperDash-ADV config entry to refresh.
+      required: true
+      selector:
+        config_entry:
+          integration: epaperdash_adv
+
+capture_debug:
+  name: Capture debug screenshot
+  description: Forces a capture and saves it to www/epaperdash_adv_debug.png so it can be opened at /local/epaperdash_adv_debug.png for troubleshooting.
+  fields:
+    entry_id:
+      name: Config entry
+      description: The EpaperDash-ADV config entry to capture.
+      required: true
+      selector:
+        config_entry:
+          integration: epaperdash_adv

@@ -1,0 +1,54 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "EpaperDash-ADV",
+        "description": "Paste a Long-Lived Access Token (Profile → Security) so the headless browser can open your dashboard as a logged-in user.",
+        "data": {
+          "long_lived_token": "Long-lived access token"
+        }
+      },
+      "settings": {
+        "title": "Dashboard & output settings",
+        "data": {
+          "dashboard_path": "Dashboard path (e.g. /lovelace-eink/0)",
+          "width": "Width (px)",
+          "height": "Height (px)",
+          "rotation": "Rotation (degrees)",
+          "color_mode": "Color mode",
+          "dither": "Dither when converting to black & white",
+          "refresh_interval": "Refresh interval (seconds)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach the dashboard with the given settings."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "EpaperDash-ADV settings",
+        "data": {
+          "dashboard_path": "Dashboard path (e.g. /lovelace-eink/0)",
+          "width": "Width (px)",
+          "height": "Height (px)",
+          "rotation": "Rotation (degrees)",
+          "color_mode": "Color mode",
+          "dither": "Dither when converting to black & white",
+          "refresh_interval": "Refresh interval (seconds)"
+        }
+      }
+    }
+  },
+  "services": {
+    "refresh": {
+      "name": "Refresh screenshot",
+      "description": "Immediately re-captures the configured dashboard view."
+    },
+    "capture_debug": {
+      "name": "Capture debug screenshot",
+      "description": "Captures and saves a debug copy under /local/epaperdash_adv_debug.png."
+    }
+  }
+}
