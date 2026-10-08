@@ -1,0 +1,54 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "EpaperDash-ADV",
+        "description": "Vlož Long-Lived Access Token (Profil → Zabezpečenie), aby sa headless prehliadač vedel prihlásiť a otvoriť tvoj dashboard.",
+        "data": {
+          "long_lived_token": "Long-lived access token"
+        }
+      },
+      "settings": {
+        "title": "Dashboard a výstup",
+        "data": {
+          "dashboard_path": "Cesta k dashboardu (napr. /lovelace-eink/0)",
+          "width": "Šírka (px)",
+          "height": "Výška (px)",
+          "rotation": "Rotácia (stupne)",
+          "color_mode": "Farebný režim",
+          "dither": "Rozptyľovanie (dithering) pri prevode na čiernobielu",
+          "refresh_interval": "Interval obnovy (sekundy)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Dashboard sa s danými nastaveniami nepodarilo načítať."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Nastavenia EpaperDash-ADV",
+        "data": {
+          "dashboard_path": "Cesta k dashboardu (napr. /lovelace-eink/0)",
+          "width": "Šírka (px)",
+          "height": "Výška (px)",
+          "rotation": "Rotácia (stupne)",
+          "color_mode": "Farebný režim",
+          "dither": "Rozptyľovanie (dithering) pri prevode na čiernobielu",
+          "refresh_interval": "Interval obnovy (sekundy)"
+        }
+      }
+    }
+  },
+  "services": {
+    "refresh": {
+      "name": "Obnoviť screenshot",
+      "description": "Okamžite znovu odfotí nakonfigurovaný dashboard."
+    },
+    "capture_debug": {
+      "name": "Debug screenshot",
+      "description": "Odfotí a uloží debug kópiu do /local/epaperdash_adv_debug.png."
+    }
+  }
+}

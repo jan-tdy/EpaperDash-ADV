@@ -1,0 +1,11 @@
+{
+  "domain": "epaperdash_adv",
+  "name": "EpaperDash-ADV",
+  "codeowners": ["@jan-tdy"],
+  "config_flow": true,
+  "documentation": "https://github.com/jan-tdy/epaperdash-adv",
+  "issue_tracker": "https://github.com/jan-tdy/epaperdash-adv/issues",
+  "iot_class": "local_polling",
+  "requirements": ["playwright==1.47.0", "Pillow>=10.0.0"],
+  "version": "0.1.0"
+}
